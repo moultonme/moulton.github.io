@@ -16,18 +16,15 @@ header {
     padding: 50px 0; /* Adds padding to the header section */
 }
 
-@media only screen and (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -45,31 +42,16 @@ nav ul li a {
     position: absolute;
     top: 5px;
     left: 5px;
-    width: 50%;
-    max-width: 300px;
+    width: 20%; /* Adjust the size as needed */
     height: auto;
     z-index: 3; /* Ensure the logo appears above the text */
 }
 
-@media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 24pt;
-        margin-left: 50px;
-        margin-right: 50px;
-        padding: 50px 0;
-    }
-
-    h3 {
-        font-size: 16pt;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
 h1 {
     z-index: 3;
-    margin-left: 200px;
-    font-size: 40pt;
-    margin-right: 200px;
+    margin-left: 10%;
+    font-size: 3vw; /* 8% of the viewport width */
+    margin-right: 10%;
     padding: 100px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to make the text readable */
@@ -78,8 +60,9 @@ h1 {
 h3{
 
 z-index: 3;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 25%;
+    font-size: 2vw; /* 8% of the viewport width */
+    margin-right: 25%;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to make the text readable */
 
@@ -88,19 +71,27 @@ z-index: 3;
 
 
 #about, #services, #contact {
-    padding: 100px 100px;
+    padding: 10% 10%;
 }
 
 #about img {
-    max-width: 350px;
+    max-width: 20%;
     height: auto;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 5%;
     float: right;
+    padding: 10% 10%;
 }
 
 .about-content {
     overflow: auto;
+}
+
+.services {
+
+width:80%;
+height: auto;
+
 }
 
 .service-boxes {
@@ -109,13 +100,11 @@ z-index: 3;
     gap: 20px;
 }
 
-img, .service-box {
+.service-box {
     background: transparent;
-    max-width: 100%;
-    height: auto;
     padding: 20px;
     flex: 1;
-    text-align: justified;
+    text-align: center;
     border-radius: 5px;
 }
 
@@ -123,7 +112,8 @@ footer {
     background: #333;
     color: #fff;
     text-align: center;
-    position: relative;
+    padding: 0px 0;
+    position: fixed;
+    width: 100%;
     bottom: 0;
-    padding: 10px 0;
 }

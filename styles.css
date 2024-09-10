@@ -71,20 +71,28 @@ z-index: 3;
 
 
 #about, #services, #contact {
-    padding: 10% 10%;
+    padding: 4% 10%;
 }
 
 #about img {
-    max-width: 20%;
+    max-width: 30%;
     height: auto;
     border-radius: 50%;
     margin-right: 5%;
     float: right;
-    padding: 10% 10%;
+    padding: 2% 10%;
 }
 
 .about-content {
     overflow: auto;
+}
+
+#services img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 5%;
+    padding: 10% 10%;
 }
 
 .services {
@@ -106,6 +114,28 @@ height: auto;
     flex: 1;
     text-align: center;
     border-radius: 5px;
+}
+
+#contact a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#blogpost {
+
+padding: 4% 10%;
+
+}
+
+.blog-content {
+
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 5%;
+
+
+
 }
 
 footer {
